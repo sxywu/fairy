@@ -1,0 +1,20 @@
+body {
+	background-color: #fdf6e3;
+}
+
+#header {
+	position: fixed;
+	width: 110%;
+	height: 50px;
+	background-color: #d33682;
+	opacity: .5;
+	top: 0;
+	left: 0;
+}
+
+#header h1 {
+	font-family: 'Raleway', sans-serif;
+	color: #fff;
+	vertical-align: middle;
+	margin: 10px;
+}

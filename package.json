@@ -1,0 +1,17 @@
+{
+  "name": "application-name",
+  "version": "0.0.1-12",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "3.0.0rc4",
+    "jade": "*",
+    "mongoose": "*"
+  },
+  "subdomain": "fairy",
+  "engines": {
+    "node": "0.8.x"
+  }
+}
