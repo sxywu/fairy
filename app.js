@@ -2,8 +2,7 @@ var express = require('express'),
   app = express(),
   server = require('http').createServer(app),
   io = require('socket.io').listen(server),
-  controller = require('./controller'),
-  websocket;
+  controller = require('./controller');
 
 app.configure(function() {
   app.use(express.static('public'));
@@ -20,8 +19,9 @@ app.get('/', function(req, res) {
 app.post('/create', controller.create);
 
 io.sockets.on('connection', function(socket) {
-  websocket = socket;
-  socket.emit('update', {hello: 'world'});
 
+  socket.on('update', function(data) {
+    console.log(data);
+  });
 
 });

@@ -1,4 +1,5 @@
-var Inventory = require('./model');
+var mongoose = require('mongoose'),
+	Inventory = require('./model');
 
 exports.create = function(req, res) {
 	var data = req.body.objectData,
@@ -16,7 +17,7 @@ exports.readAll = function(req, res) {
 	});
 }
 
-exports.update = function(req, res) {
-	var data = req.body.objectData,
-		id = 
+exports.update = function(data, callback) {
+	var id = mongoose.Types.ObjectId(data.id);
+
 }
